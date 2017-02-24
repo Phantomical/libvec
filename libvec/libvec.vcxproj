@@ -111,6 +111,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="functions.h" />
+    <ClInclude Include="libvec.h" />
     <ClInclude Include="operators.h" />
     <ClInclude Include="vector_base.h" />
   </ItemGroup>
