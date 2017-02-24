@@ -121,4 +121,26 @@ namespace vec
 
 		}
 	};
+
+	template<typename T, size_t sz>
+	T* begin(tvec_base<T, sz>& v)
+	{
+		return v.m;
+	}
+	template<typename T, size_t sz>
+	T* end(tvec_base<T, sz>& v)
+	{
+		return v.m + sz;
+	}
+
+	template<typename T, size_t sz>
+	const T* begin(const tvec_base<T, sz>& v)
+	{
+		return v.m;
+	}
+	template<typename T, size_t sz>
+	const T* end(const tvec_base<T, sz>& v)
+	{
+		return v.m + sz;
+	}
 }
