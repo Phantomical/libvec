@@ -36,6 +36,11 @@ namespace vec
 			LIBVEC_ASSERT(l < sz);
 			return m[l];
 		}
+
+		constexpr size_t size() const
+		{
+			return sz;
+		}
 	};
 
 	template<typename T>
@@ -79,6 +84,11 @@ namespace vec
 		{
 
 		}
+
+		constexpr size_t size() const
+		{
+			return sz;
+		}
 	};
 
 	template<typename T>
@@ -120,6 +130,11 @@ namespace vec
 		{
 
 		}
+
+		constexpr size_t size() const
+		{
+			return sz;
+		}
 	};
 
 	template<typename T, size_t sz>
@@ -144,3 +159,5 @@ namespace vec
 		return v.m + sz;
 	}
 }
+
+#undef LIBVEC_ASSERT
