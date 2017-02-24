@@ -18,5 +18,8 @@
     <ClInclude Include="vector_base.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="operators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
